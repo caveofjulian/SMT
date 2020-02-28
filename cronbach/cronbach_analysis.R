@@ -13,7 +13,7 @@ cat("\f")
 nep_keys = c("Nep01", "Nep02", "Nep03", "Nep04", "Nep05")
 bif_keys = c("Bif01", "Bif02", "Bif03", "Bif04", "Bif05", "Bif06", "Bif07")
 guilt_keys = c("Guilt01", "Guilt02", "Guilt03", "Guilt04", "Guilt05")
-big_keys = c("Big01", "Big02", "Big03", "Big04", "Big05", "Big06", "Big07", "Big08", "Big09", "Big10")
+big_keys = c("Big02","Big07") # Only 2 and 7 are relevant because only they measure agreeableness
 
 # The dataframes contain all data gathered with the likert scales.
 nep_df <- getDataFrame(nep_keys)
@@ -22,13 +22,11 @@ guilt_df <- getDataFrame(guilt_keys)
 big_df <- getDataFrame(big_keys)
 
 # The chronbach's alpha indicates the internal consistency
-alpha_nep <- alpha(nep_df, keys = nep_keys[c(1:4)])
-alpha_bif <- alpha(bif_df, keys = bif_keys[1])
+alpha_nep <- alpha(nep_df, keys = nep_keys[c(2:4)])
+alpha_bif <- alpha(bif_df, keys = bif_keys[2:7])
 alpha_guilt <- alpha(guilt_df, keys = guilt_keys[c(3:5)])
-alpha_big <- alpha(big_df, keys = big_keys[c(seq(2,10, by=2))])
+alpha_big <- alpha(big_df, check.keys =  TRUE)
 
-# Removing the first key (Nep01) improves the internal consistency.
-new_alpha_nep <- alpha(nep_df[c(2:5)], keys = nep_keys[c(2:4)])
 
 # These scores are special because it contains the means per every row
 result_nep <- alpha_nep$scores
