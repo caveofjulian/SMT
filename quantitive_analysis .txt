@@ -1,0 +1,5 @@
+        vars   n  mean    sd min max range   se
+HrPWork    1 693 10.36  8.79   0  59    59 0.33
+HrVWork    2 693  1.53  4.36   0  60    60 0.17
+HrClass    3 693  9.13  5.55   0  60    60 0.21
+HrStud     4 693 14.89 10.81   1  60    59 0.41

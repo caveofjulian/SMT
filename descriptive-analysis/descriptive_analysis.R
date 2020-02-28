@@ -18,9 +18,7 @@ export_quantitive_analysis(df)
 
 # Outliers analysis --------------------------------------------------------
 # Assigning all of them to a variable so we don't have to access it every time, also these variable names are 
-# much more descriptive so we can understand the code and don't need an excessive amount of comments that describe
-# the variables. Comments should only be placed where they are needed to explain the internal logic, they shouldn't
-# answer a "What?" question, but a "why". "What" should be solved by proper variable naming, avoiding abbreviations.
+# much more descriptive so we can understand the code.
 paid_hours <- df$HrPWork
 volunteer_hours <- df$HrVWork
 class_hours <- df$HrClass
