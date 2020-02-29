@@ -1,16 +1,16 @@
 [[1]]
-   vars  n mean   sd min max range  se
-X1    1 11 6.18 1.33   5  10     5 0.4
+   vars   n mean   sd min max range   se
+X1    1 534 9.41 8.56   0  30    30 0.37
 
 [[2]]
-   vars   n mean  sd min max range   se
-X1    1 677 1.03 2.4   0  12    12 0.09
+   vars   n mean   sd min max range   se
+X1    1 154  9.1 8.12   0  30    30 0.65
 
 [[3]]
-   vars   n mean   sd min max range   se
-X1    1 687 8.84 4.46   0  24    24 0.17
+   vars   n  mean   sd min max range   se
+X1    1 666 10.74 8.98   0  30    30 0.35
 
 [[4]]
    vars   n  mean   sd min max range   se
-X1    1 680 14.09 9.19   1  45    44 0.35
+X1    1 680 12.01 7.67   0  30    30 0.29
 
